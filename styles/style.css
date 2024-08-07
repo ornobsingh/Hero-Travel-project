@@ -10,7 +10,7 @@
 /* share styles */
 .container {
   max-width: 90%;
-  margin: 3rem auto;
+  margin: 5rem auto;
   border-radius: 1rem;
 }
 
@@ -142,6 +142,11 @@ select {
   gap: 3rem;
 }
 
+.popular-section img {
+  width: 100%;
+  height: 100%;
+}
+
 .text-contant {
   display: flex;
   flex-direction: column;
@@ -205,39 +210,90 @@ select {
   color: white;
   transform: translate(-50%, -50%);
 }
+
 /* footer section style */
-.footer-section{
+.footer-section {
   background-color: rgba(19, 19, 24, 0.05);
-  padding: 2rem 0;  
+  padding: 2rem 0;
 }
-.footer-section .nav-logo{
+
+.footer-section .nav-logo {
   margin: 2rem auto;
 }
-.social{
+
+.social {
   width: 200px;
   display: flex;
   align-items: center;
   justify-content: space-around;
   margin: 2rem auto;
 }
-.social i{
+
+.social i {
   height: 44px;
   font-size: 1.5rem;
 }
-.footer-section hr{
+
+.footer-section hr {
   margin: 2rem auto;
 }
-.ham-burger{
+
+.ham-burger {
   display: none;
 }
 
 
 /* Responsive design */
-@media screen and (max-width: 576px){
-  .nav-option{
+@media screen and (max-width: 576px) {
+  .nav-option {
     display: none;
   }
-  .ham-burger{
+
+  .ham-burger {
     display: block;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .ham-burger i {
+    font-size: 1.5rem;
+  }
+
+  .container {
+    margin: 3rem auto;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  .explore-container h3 {
+    font-size: 1.4rem;
+  }
+
+  .explore-container p {
+    width: 60%;
+  }
+
+  .traval-input {
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+  }
+
+  .traval-input input,
+  .traval-input select,
+  .traval-input button {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .popular-section,
+  .row-1,
+  .row-2,
+  .row-3 {
+    grid-template-columns: 1fr;
   }
 }
